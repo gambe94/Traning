@@ -1,0 +1,18 @@
+<apex:page controller="TemplateforQuotes" showheader="false">
+    <apex:form>
+        <apex:outputpanel>
+            <apex:pageblock mode="detail" title="New Quote From Template">
+                <apex:pageblocksection columns="2">
+                    <apex:inputtext value="{!newQuoteName}" style="width:250px;" label="Quote Name" required="true" />
+                    <apex:selectlist value="{!selectedTemplateName}" label="Templates" size="3">
+                        <apex:selectoptions value="{!pickList}" />
+                    </apex:selectlist>
+                    <apex:commandbutton action="{!newQuote}" value="New" />
+                    <apex:commandbutton action="{!newQuote}" value="New" />
+                </apex:pageblocksection>
+
+            </apex:pageblock>
+        </apex:outputpanel>
+    </apex:form>
+
+</apex:page>

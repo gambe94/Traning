@@ -1,0 +1,37 @@
+37.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+Execute Anonymous: calculatorServices.CalculatorImplPort calculator = new  calculatorServices.CalculatorImplPort();
+Execute Anonymous: Double x = 1.0;
+Execute Anonymous: Double y = 2.0;
+Execute Anonymous: Double result = calculator.doAdd(x,y);
+Execute Anonymous: System.debug(result);
+09:04:22.2 (2347686)|USER_INFO|[EXTERNAL]|0050Y000000OFnm|gabor.demeter@attentioncrm.hu.traning|Greenwich Mean Time|GMTZ
+09:04:22.2 (2362023)|EXECUTION_STARTED
+09:04:22.2 (2366754)|CODE_UNIT_STARTED|[EXTERNAL]|execute_anonymous_apex
+09:04:22.2 (11636371)|SYSTEM_MODE_ENTER|false
+09:04:22.2 (11784394)|SYSTEM_MODE_EXIT|false
+09:04:22.2 (11863092)|SYSTEM_MODE_ENTER|false
+09:04:22.2 (292457892)|CALLOUT_REQUEST|[142]|<?xml version="1.0" encoding="UTF-8"?><env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><env:Header /><env:Body><m:doAdd xmlns:m="http://calculator.services/"><arg0>1.0</arg0><arg1>2.0</arg1></m:doAdd></env:Body></env:Envelope>
+09:04:22.2 (292545830)|CALLOUT_REQUEST|[142]|doAdd:[apex_schema_type_info=(http://calculator.services/, false, false), arg0=1.0, arg0_type_info=(arg0, http://calculator.services/, null, 0, 1, false), arg1=2.0, arg1_type_info=(arg1, http://calculator.services/, null, 0, 1, false), field_order_type_info=(arg0, arg1)]::SOAPAction="" Accept=text/xml User-Agent=SFDC-Callout/38.0 SFDC_STACK_DEPTH=1 Content-Type=text/xml; charset=UTF-8 
+09:04:22.2 (450429905)|CALLOUT_RESPONSE|[142]|<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"><soap:Body><ns2:doAddResponse xmlns:ns2="http://calculator.services/"><return>3.0</return></ns2:doAddResponse></soap:Body></soap:Envelope>
+09:04:22.2 (451195983)|CALLOUT_RESPONSE|[142]|
+09:04:22.2 (451373631)|SYSTEM_MODE_EXIT|false
+09:04:22.2 (451434012)|USER_DEBUG|[5]|DEBUG|3.0
+09:04:22.452 (452848691)|CUMULATIVE_LIMIT_USAGE
+09:04:22.452 (452848691)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 1 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+09:04:22.452 (452848691)|CUMULATIVE_LIMIT_USAGE_END
+
+09:04:22.2 (452903377)|CODE_UNIT_FINISHED|execute_anonymous_apex
+09:04:22.2 (453716169)|EXECUTION_FINISHED

@@ -1,0 +1,22 @@
+<apex:page doctype="html-5.0" title="Business Card">
+    <apex:remoteobjects>
+        <apex:remoteobjectmodel name="User" fields="Id, Email, FirstName, LastName, Phone, Title" />
+    </apex:remoteobjects>
+    <div class="mypage">
+        <ul id="userInfo" />
+        Email: <input type="Email" id="email" />
+        <button onclick="sendInfo()">Send</button>
+    </div>
+
+    <script>
+    var ul = document.getElementById("userInfo");
+    var email = document.getElementById("email").value;
+    var user = new SObjectModel.User();
+    var html="<li> First Name: " + "{!$User.FirstName}" + "</li>" +
+        "<li> Last Name: " + "{!$User.LastName}" + "</li>"+
+        "<li> Email: " + "{!$User.Email}" + "</li>"+
+        "<li> Phone: " + "{!$User.Phone}" + "</li>"+
+        "<li> Title: " + "{!$User.Title}" + "</li>";
+    ul.innerHTML = html;
+    </script>
+</apex:page>

@@ -1,0 +1,33 @@
+37.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+13:29:34.0 (809229)|USER_INFO|[EXTERNAL]|0050Y000000OFnm|gabor.demeter@attentioncrm.hu.traning|Greenwich Mean Time|GMTZ
+13:29:34.0 (839905)|EXECUTION_STARTED
+13:29:34.0 (845114)|CODE_UNIT_STARTED|[EXTERNAL]|01p0Y000008HYs4|LeadProcessorTest.test1
+13:29:34.0 (5689285)|DML_BEGIN|[11]|Op:Insert|Type:Lead|Rows:200
+13:29:34.0 (115858484)|DML_END|[11]
+13:29:34.0 (115969165)|VF_PAGE_MESSAGE|Required fields are missing: [Company]
+13:29:34.0 (121733132)|EXCEPTION_THROWN|[11]|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Company]: [Company]
+13:29:34.0 (122939554)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Company]: [Company]
+
+Class.LeadProcessorTest.test1: line 11, column 1
+13:29:34.0 (122948144)|FATAL_ERROR|System.DmlException: Insert failed. First exception on row 0; first error: REQUIRED_FIELD_MISSING, Required fields are missing: [Company]: [Company]
+
+Class.LeadProcessorTest.test1: line 11, column 1
+13:29:34.122 (122956814)|CUMULATIVE_LIMIT_USAGE
+13:29:34.122 (122956814)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 200 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:29:34.122 (122956814)|CUMULATIVE_LIMIT_USAGE_END
+
+13:29:34.0 (122992890)|CODE_UNIT_FINISHED|LeadProcessorTest.test1
+13:29:34.0 (123831455)|EXECUTION_FINISHED

@@ -1,0 +1,75 @@
+37.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+13:31:24.0 (843946)|USER_INFO|[EXTERNAL]|0050Y000000OFnm|gabor.demeter@attentioncrm.hu.traning|Greenwich Mean Time|GMTZ
+13:31:24.0 (879813)|EXECUTION_STARTED
+13:31:24.0 (884421)|CODE_UNIT_STARTED|[EXTERNAL]|01p0Y000008HYs4|LeadProcessorTest.test1
+13:31:24.0 (8220823)|DML_BEGIN|[11]|Op:Insert|Type:Lead|Rows:200
+13:31:24.0 (656695893)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Lead
+13:31:24.0 (667931344)|WF_RULE_EVAL_BEGIN|Assignment
+13:31:24.0 (667989230)|WF_SPOOL_ACTION_BEGIN|Assignment
+13:31:24.0 (667995373)|WF_ACTION|.
+13:31:24.0 (667998776)|WF_RULE_EVAL_END
+13:31:24.0 (668056949)|WF_ACTIONS_END| None
+13:31:24.0 (668065989)|CODE_UNIT_FINISHED|Workflow:Lead
+13:31:24.0 (672497119)|DML_END|[11]
+13:31:24.0 (698755704)|CODE_UNIT_STARTED|[EXTERNAL]|01p0Y000008HYYn|LeadProcessor
+13:31:24.0 (702653513)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT LeadSource FROM Lead
+13:31:24.0 (730276554)|SOQL_EXECUTE_END|[4]|Rows:224
+13:31:24.0 (730928302)|EXCEPTION_THROWN|[EXTERNAL]|System.UnexpectedException: No more than one executeBatch can be called from within a test method.  Please make sure the iterable returned from your start method matches the batch size, resulting in one executeBatch invocation.
+13:31:24.731 (731011645)|CUMULATIVE_LIMIT_USAGE
+13:31:24.731 (731011645)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 200
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 60000
+  Maximum heap size: 0 out of 12000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 0
+  Number of queueable jobs added to the queue: 0 out of 1
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:31:24.731 (731011645)|CUMULATIVE_LIMIT_USAGE_END
+
+13:31:24.0 (731051336)|CODE_UNIT_FINISHED|LeadProcessor
+13:31:24.0 (732017681)|FATAL_ERROR|System.UnexpectedException: No more than one executeBatch can be called from within a test method.  Please make sure the iterable returned from your start method matches the batch size, resulting in one executeBatch invocation.
+
+External entry point
+13:31:24.0 (732028936)|FATAL_ERROR|System.UnexpectedException: No more than one executeBatch can be called from within a test method.  Please make sure the iterable returned from your start method matches the batch size, resulting in one executeBatch invocation.
+
+External entry point
+13:31:24.732 (732033859)|CUMULATIVE_LIMIT_USAGE
+13:31:24.732 (732033859)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 200 out of 10000
+  Maximum CPU time: 145 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:31:24.732 (732033859)|TESTING_LIMITS
+13:31:24.732 (732033859)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:31:24.732 (732033859)|CUMULATIVE_LIMIT_USAGE_END
+
+13:31:24.0 (732063211)|CODE_UNIT_FINISHED|LeadProcessorTest.test1
+13:31:24.0 (732804924)|EXECUTION_FINISHED

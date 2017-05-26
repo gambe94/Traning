@@ -1,0 +1,67 @@
+37.0 APEX_CODE,DEBUG;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WORKFLOW,INFO
+15:18:20.0 (836156)|USER_INFO|[EXTERNAL]|0050Y000000OFnm|gabor.demeter@attentioncrm.hu.traning|Greenwich Mean Time|GMTZ
+15:18:20.0 (880297)|EXECUTION_STARTED
+15:18:20.0 (887229)|CODE_UNIT_STARTED|[EXTERNAL]|01p0Y000008HbGX|DailyLeadProcessorTest.test1
+15:18:20.0 (16870217)|DML_BEGIN|[12]|Op:Insert|Type:Lead|Rows:200
+15:18:20.0 (702045477)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Lead
+15:18:20.0 (712023930)|WF_RULE_EVAL_BEGIN|Assignment
+15:18:20.0 (712065466)|WF_SPOOL_ACTION_BEGIN|Assignment
+15:18:20.0 (712070519)|WF_ACTION|.
+15:18:20.0 (712073450)|WF_RULE_EVAL_END
+15:18:20.0 (712122376)|WF_ACTIONS_END| None
+15:18:20.0 (712130091)|CODE_UNIT_FINISHED|Workflow:Lead
+15:18:20.0 (714994881)|DML_END|[12]
+15:18:20.0 (731400290)|SOQL_EXECUTE_BEGIN|[4]|Aggregations:0|SELECT id FROM Lead WHERE LeadSource = NULL LIMIT 200
+15:18:20.0 (737597454)|SOQL_EXECUTE_END|[4]|Rows:200
+15:18:20.0 (743749755)|DML_BEGIN|[10]|Op:Update|Type:Lead|Rows:200
+15:18:22.671 (2671291614)|CODE_UNIT_STARTED|[EXTERNAL]|Workflow:Lead
+15:18:22.671 (2674820126)|WF_RULE_EVAL_BEGIN|Assignment
+15:18:22.671 (2674857614)|WF_SPOOL_ACTION_BEGIN|Assignment
+15:18:22.671 (2674862600)|WF_ACTION|.
+15:18:22.671 (2674865854)|WF_RULE_EVAL_END
+15:18:22.671 (2674922231)|WF_ACTIONS_END| None
+15:18:22.671 (2674930920)|CODE_UNIT_FINISHED|Workflow:Lead
+15:18:22.671 (2676461603)|DML_END|[10]
+15:18:22.671 (2677968629)|SOQL_EXECUTE_BEGIN|[22]|Aggregations:0|SELECT LeadSource FROM Lead WHERE id IN :tmpVar1
+15:18:22.671 (2686485769)|SOQL_EXECUTE_END|[22]|Rows:200
+15:18:22.671 (2692850202)|EXCEPTION_THROWN|[26]|System.AssertException: Assertion Failed: Expected: Dreamforce, Actual: null
+15:18:22.671 (2693140618)|FATAL_ERROR|System.AssertException: Assertion Failed: Expected: Dreamforce, Actual: null
+
+Class.DailyLeadProcessorTest.test1: line 26, column 1
+15:18:22.671 (2693153024)|FATAL_ERROR|System.AssertException: Assertion Failed: Expected: Dreamforce, Actual: null
+
+Class.DailyLeadProcessorTest.test1: line 26, column 1
+15:18:22.693 (2693161457)|CUMULATIVE_LIMIT_USAGE
+15:18:22.693 (2693161457)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 200 out of 10000
+  Maximum CPU time: 184 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:18:22.693 (2693161457)|TESTING_LIMITS
+15:18:22.693 (2693161457)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 200 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 1 out of 150
+  Number of DML rows: 200 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+15:18:22.693 (2693161457)|CUMULATIVE_LIMIT_USAGE_END
+
+15:18:22.671 (2693212328)|CODE_UNIT_FINISHED|DailyLeadProcessorTest.test1
+15:18:22.671 (2694032011)|EXECUTION_FINISHED
