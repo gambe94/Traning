@@ -137,8 +137,8 @@
       <SubType>Class</SubType>
       <PhysicalRelativePath>src\classes\AwesomeCalculator.cls</PhysicalRelativePath>
       <Id>01p0Y000008HSeNQAW</Id>
-      <LastModifiedDateUtcTicks>131287725750000000</LastModifiedDateUtcTicks>
-      <Hash>x37pkLy9ofnSn29arpdNQA==</Hash>
+      <LastModifiedDateUtcTicks>131402753420000000</LastModifiedDateUtcTicks>
+      <Hash>agTS95u4r8tpmnAT48bDrA==</Hash>
     </Compile>
     <Compile Include="classes\AwesomeCalculatorTest.cls">
       <SubType>Class</SubType>
@@ -370,8 +370,8 @@
       <SubType>Class</SubType>
       <PhysicalRelativePath>src\classes\TemplateforQuotes.cls</PhysicalRelativePath>
       <Id>01p0Y000009lQYZQA2</Id>
-      <LastModifiedDateUtcTicks>131311938700000000</LastModifiedDateUtcTicks>
-      <Hash>oHEto3dbyzi4b9MYJT1TZQ==</Hash>
+      <LastModifiedDateUtcTicks>131402753420000000</LastModifiedDateUtcTicks>
+      <Hash>y6dKPe8SWWwlhPyZ6b3b7g==</Hash>
     </Compile>
     <Compile Include="classes\TestAccountDeletion.cls">
       <PhysicalRelativePath>src\classes\TestAccountDeletion.cls</PhysicalRelativePath>
