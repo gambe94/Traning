@@ -310,6 +310,13 @@
       <LastModifiedDateUtcTicks>131286052710000000</LastModifiedDateUtcTicks>
       <Hash>+0MoOy1U+YJYPaqKN1zFZg==</Hash>
     </Compile>
+    <Compile Include="classes\newGaborc.cls">
+      <SubType>Class</SubType>
+      <PhysicalRelativePath>src\classes\newGaborc.cls</PhysicalRelativePath>
+      <Id>01p0Y00000FrC9ZQAV</Id>
+      <LastModifiedDateUtcTicks>131402756280000000</LastModifiedDateUtcTicks>
+      <Hash>lb2T5aXA/CfnqOymmvRh3w==</Hash>
+    </Compile>
     <Compile Include="classes\OpportunityStageTips.page">
       <SubType>Page</SubType>
       <PhysicalRelativePath>src\pages\OpportunityStageTips.page</PhysicalRelativePath>
@@ -1146,6 +1153,13 @@
       <LastModifiedDateUtcTicks>131286038650000000</LastModifiedDateUtcTicks>
       <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
       <DependentUpon>classes\NewCaseListController.cls</DependentUpon>
+    </None>
+    <None Include="classes\newGaborc.cls-meta.xml">
+      <SubType>Metadata</SubType>
+      <PhysicalRelativePath>src\classes\newGaborc.cls-meta.xml</PhysicalRelativePath>
+      <LastModifiedDateUtcTicks>131402755660000000</LastModifiedDateUtcTicks>
+      <Hash>chSpUW6sUNTEfXRjwHBJgg==</Hash>
+      <DependentUpon>classes\newGaborc.cls</DependentUpon>
     </None>
     <None Include="classes\OpportunityStageTips.page-meta.xml">
       <SubType>Metadata</SubType>
